@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--boilerplate code: '!'-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media (min-width: 750px) { 
+            body {
+                background-color: red;
+            }
+        }
+
+        @media (max-width: 749px) {
+            body {
+                background-color: blue;
+            }
+        }
+    </style>
+    <br>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <table>
+        <thead>
+           <th>Ocean</th>
+            <th>Average Depth</th>
+            <th>Maximum Depth</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Pacific Ocean</td>
+            <td>4,860m</td>
+            <td>12,186m</td>
+        </tr>
+         <tr>
+                <td>Atlantic Ocean</td>
+                <td>3,269m</td>
+                <td>12,389m</td>
+         </tr>
+        </tbody>
+    </table>
+    <form>
+        <div>
+        <input name="color" type="radio" value="red">Red
+        <input name="color" type="radio" value="green">Green
+        <input name="color" type="radio" value="blue">Blue
+        <input name="color" type="radio" value="orange">Orange
+        <input name="color" type="radio" value="other">Other
+    </div>
+    <div>
+        <input name="country" list="countries" placeholder="Country">
+        <datalist id="countries">
+            <option value="India"></option>
+            <option value="UK"></option>
+            <option value="Germany"></option>
+            <option value="China"></option>
+            <option value="USA"></option>
+        </datalist>
+    </div>
+</form>
+<button >Submit</button>
+<style>
+    button{
+        background-color: red;
+    }
+button:hover {
+    background-color: green;}
+    </style><br>
+    <ol>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.amazon.com/">Amazon</a> </li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ol>
+    <style>
+        a[href="https://www.amazon.com/"] {
+            color: red;
+        }
+    </style>
+    <br>
+    <!--flexbox: deal with differing screen size-->
+    <div id="container">
+        <div>Some text 1!</div>
+        <div>Some text 2!</div>
+        <div>Some text 3!</div>
+        <div>Some text 4!</div>
+        <div>Some text 5!</div>
+        <div>Some text 6!</div>
+        <div>Some text 7!</div>
+        <div>Some text 8!</div>
+        <div>Some text 9!</div>
+        <div>Some text 10!</div>
+        <div>Some text 11!</div>
+        <div>Some text 12!</div>
+    </div>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #container > div {
+            background-color: green;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+    <br>
+    <!--grid styling: we can specify style attributes such as column widths and gaps between columns 
+        and rows, as demonstrated below. Note that when we specify column widths, we say the third one 
+        is auto, meaning it should fill the rest of the page.-->
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+    <style>
+        .grid {
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
